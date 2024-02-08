@@ -1,0 +1,173 @@
+http://tailwindcss.com
+
+Integrate Methods
+1. Using CDN Link (Content Deliver Network)
+2. Using Tailwind CLI (Command-Line Interface)
+3. Using PostCSS
+
+
+
+Terminal = VS code
+Nodejs
+
+For Linux
+sudo apt update
+sudo apt upgrade -y
+sudo apt install nodejs
+
+node -v (version စစ်)
+
+CDN
+
+tW
+.text-primary{
+	color:blue;
+}
+.text-danger{
+	color:red;
+}
+.text-success{
+	color:green;
+}
+
+
+compile
+.text-success{
+	color:green;
+}
+
+
+
+project
+<p class="text-success">Hey,</p>
+
+
+
+1. Using CDN Link (Content Deliver Network)
+
+css js compile လုပ်တာမလို့ title အောက်မှာရေးသင့်
+<script src="https://cdn.tailwindcss.com"></script>
+
+tailwindcss ချိတ်မချိတ်သိချင်ရင် h1 နဲ့လုပ်ကြည့် font သေးရင်၇ပိ
+
+
+3. Using PostCSS
+=>open folder "usingpostcss"
+=>open new terminal
+npm install -D tailwindcss postcss autoprefixer
+sudo npm install npm (linux မှာအပေါ်ကcode runလိုက်ရင် npmမတွေ့မှာ installလုပ်ပေးရမှာ)
+
+=> create tailwind.config file
+npx tailwindcss init
+
+=> add postcss.config.js file
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  }
+}
+
+=> create public folder
+
+=> go to tailwind.config.js
+
+=> and write down in content: ["./public/**/*.html"]
+. = current folder
+** = all folder of inside in public folder
+* = all html files
+
+
+=> create Tailwind main file
+= create new folder and nameing "tailwind"
+= create new file and naming "main.css" in "tailwind" folder
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+=> Build process
+npm init -y (if you doesn't have package.json)
+= write down "npm init -y" in terminal (so it's create package.json)
+
+=> write down in package.json > "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css"
+  },
+
+-i = install
+-o = open
+
+= go to terminal and enter "npm run build"
+ => go to package.json, write down
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css",
+    "watch":"tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css --watch"
+  },
+
+(--watch နေရာမှာ -w လို့ပဲရေးလို့ပဲရ shortcut)
+
+linux nodejs update version 18.8.0
+
+
+
+
+2. Using Tailwind CLI (Command-Line Interface)
+
+=>open folder "usingcli"
+=>open new terminal (npm = Node package Manager)
+npm install -D tailwindcss
+
+=> create tailwind.config file (npx = Node Package Execute)
+npx tailwindcss init
+
+
+=> add postcss.config.js file
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  }
+}
+
+=> create public folder
+
+=> go to tailwind.config.js
+
+=> and write down in content: ["./public/**/*.{html/js}"]
+. = current folder
+** = all folder of inside in public folder
+* = all html files
+
+
+=> create Tailwind main file
+= create new folder and nameing "tailwind"
+= create new file and naming "main.css" in "tailwind" folder
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+=> Build process
+npm init -y (if you doesn't have package.json)
+= write down "npm init -y" in terminal (so it's create package.json)
+
+=> write down in package.json > "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css"
+  },
+
+-i = install
+-o = open
+
+= go to terminal and enter "npm run build"
+ => go to package.json, write down
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css",
+    "watch":"tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css --watch"
+  },
+
+
+

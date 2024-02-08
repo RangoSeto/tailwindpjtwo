@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+    /* default css  */
+
+    .bg-gray--200{
+        background-color: silver;
+    }
+
+    .text-green-500{
+        color: #fff;
+    }
+}

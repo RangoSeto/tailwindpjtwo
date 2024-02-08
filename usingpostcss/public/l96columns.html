@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Columns</title>
+    <link href="./tailwind.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- div > img:first-child{
+        margin-top:0;
+    } -->
+
+    <!-- div .img{
+
+    } -->
+
+    <!-- div{
+        &.img{
+
+        }
+    } -->
+
+    <div class="p-5 sm:p-8">
+        <div class="sm:columns-2 md:columns-3 lg:columns-4 gap-8 md:gap-5 [&>img:not(:first-child)]:mt-8"> <!-- [&>img]:mt-8 က ဒီကdivအောက်မှာရှိတဲ့ imgတွေအကုန်လုံးကို mt-8 ပေးမယ်လို့ပြောတာ  , [&>img:not(:first-child)]:mt-8 က first childကလွဲပြီးတော့ပြောတာ-->
+
+            <img src="https://source.unsplash.com/random/1" />
+            <img src="https://source.unsplash.com/random/2" />
+            <img src="https://source.unsplash.com/random/3" />
+            <img src="https://source.unsplash.com/random/4" />
+            <img src="https://source.unsplash.com/random/5" />
+            <img src="https://source.unsplash.com/random/6" />
+            <img src="https://source.unsplash.com/random/7" />
+            <img src="https://source.unsplash.com/random/8" />
+            <img src="https://source.unsplash.com/random/9" />
+            <img src="https://source.unsplash.com/random/10" />
+            <img src="https://source.unsplash.com/random/11" />
+            <img src="https://source.unsplash.com/random/12" />
+            <img src="https://source.unsplash.com/random/13" />
+            <img src="https://source.unsplash.com/random/14" />
+            <img src="https://source.unsplash.com/random/15" />
+            <img src="https://source.unsplash.com/random/16" />
+            <img src="https://source.unsplash.com/random/17" />
+            <img src="https://source.unsplash.com/random/18" />
+            <img src="https://source.unsplash.com/random/19" />
+            <img src="https://source.unsplash.com/random/20" />
+
+        </div>
+    </div>
+
+</body>
+</html>
+

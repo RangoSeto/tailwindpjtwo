@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex</title>
+    <link href="./tailwind.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+    <h1>This is Tailwind css</h1>
+
+    <h5>Flex</h5>
+    <div class="flex flex-row text-white">
+        <div class="w-44 h-20 bg-stone-900 flex-none">DIV 1</div>
+        <div class="w-44 h-20 bg-green-900">DIV 2</div>
+        <div class="w-44 h-20 bg-green-900">DIV 3</div>
+        <div class="w-44 h-20 bg-green-900">DIV 4</div>
+        <div class="w-44 h-20 bg-green-900">DIV 5</div>
+        <div class="w-44 h-20 bg-green-900">DIV 6</div>
+    </div>
+
+    <hr class="my-5" />
+
+    <div class="flex flex-row text-white">
+        <div class="w-44 h-20 bg-stone-900 flex-auto">DIV 1</div>
+        <div class="w-44 h-20 bg-green-900">DIV 2</div>
+        <div class="w-44 h-20 bg-green-900">DIV 3</div>
+        <div class="w-44 h-20 bg-green-900">DIV 4</div>
+        <div class="w-44 h-20 bg-green-900">DIV 5</div>
+        <div class="w-44 h-20 bg-green-900">DIV 6</div>
+    </div>
+
+    <hr class="my-5" />
+    
+
+    <div class="flex flex-row text-white">
+        <div class="w-44 h-20 bg-stone-900 flex-1">DIV 1</div>
+        <div class="w-44 h-20 bg-green-900">DIV 2</div>
+        <div class="w-44 h-20 bg-green-900">DIV 3</div>
+        <div class="w-44 h-20 bg-green-900">DIV 4</div>
+        <div class="w-44 h-20 bg-green-900">DIV 5</div>
+        <div class="w-44 h-20 bg-green-900">DIV 6</div>
+    </div>
+
+    <hr class="my-5" />
+
+    <div class="flex flex-row text-white">
+        <div class="w-44 h-20 bg-stone-900 flex-initial">DIV 1</div>
+        <div class="w-44 h-20 bg-green-900">DIV 2</div>
+        <div class="w-44 h-20 bg-green-900">DIV 3</div>
+        <div class="w-44 h-20 bg-green-900">DIV 4</div>
+        <div class="w-44 h-20 bg-green-900">DIV 5</div>
+        <div class="w-44 h-20 bg-green-900">DIV 6</div>
+    </div>
+
+    <hr class="my-5" />
+
+    <div class="flex flex-row text-white">
+        <div class="w-44 h-20 bg-stone-900 flex-initial">DIV 1</div>
+        <div class="w-44 h-20 bg-green-900">DIV 2</div>
+        <div class="w-44 h-20 bg-rose-900 flex-auto">DIV 3</div>
+        <div class="w-44 h-20 bg-green-900">DIV 4</div>
+        <div class="w-44 h-20 bg-green-900">DIV 5</div>
+        <div class="w-44 h-20 bg-green-900">DIV 6</div>
+    </div>
+
+    <hr class="my-5" />
+
+    <h5>Flex-grow</h5>
+    <div class="flex flex-row text-white">
+        <div class="w-44 h-20 bg-stone-900 flex-none">DIV 1</div>
+        <div class="w-44 h-20 bg-green-900 grow">DIV 2</div>
+        <div class="w-44 h-20 bg-rose-900 flex-none">DIV 3</div>
+        <div class="w-44 h-20 bg-green-900">DIV 4</div>
+        <div class="w-44 h-20 bg-green-900">DIV 5</div>
+        <div class="w-44 h-20 bg-green-900">DIV 6</div>
+    </div>
+
+    <hr class="my-5" />
+
+    <div class="flex flex-row text-white">
+        <div class="w-44 h-20 bg-stone-900 grow">DIV 1</div>
+        <div class="w-44 h-20 bg-green-900 grow-0">DIV 2</div> <!--grow ဘာမှမပေးထားတာနဲ့သွားတူ -->
+        <div class="w-44 h-20 bg-rose-900 grow">DIV 3</div>
+        <div class="w-44 h-20 bg-green-900">DIV 4</div>
+        <div class="w-44 h-20 bg-green-900">DIV 5</div>
+        <div class="w-44 h-20 bg-green-900">DIV 6</div>
+    </div>
+
+    <hr class="my-5" />
+
+    <h5>flex-shrink</h5>
+    <div class="flex flex-row text-white">
+        <div class="w-44 h-20 bg-stone-900 flex-none">DIV 1</div>
+        <div class="w-44 h-20 bg-green-900 shrink">DIV 2</div> 
+        <div class="w-44 h-20 bg-rose-900 flex-none">DIV 3</div>
+        <div class="w-44 h-20 bg-green-900">DIV 4</div>
+        <div class="w-44 h-20 bg-green-900">DIV 5</div>
+        <div class="w-44 h-20 bg-green-900">DIV 6</div>
+    </div>
+
+    <hr class="my-5" />
+
+    <div class="flex flex-row text-white">
+        <div class="w-44 h-20 bg-stone-900 flex-none">DIV 1</div>
+        <div class="w-44 h-20 bg-green-900 shrink-0">DIV 2</div> <!--flex-none ပေးထားတာနဲ့သွားတူ -->
+        <div class="w-44 h-20 bg-rose-900 flex-none">DIV 3</div>
+        <div class="w-44 h-20 bg-green-900">DIV 4</div>
+        <div class="w-44 h-20 bg-green-900">DIV 5</div>
+        <div class="w-44 h-20 bg-green-900">DIV 6</div>
+    </div>
+
+    <hr class="my-5" />
+
+</body>
+</html>
+
+<!-- (flex ရဲ့အောက်က child မှာပေးရတာ)
+flex-none              flex:none;
+flex-auto              flex:1 1 auto; (flex-grow flex-shrink basis|auto|initial|inherit(flex-type))  (width ထိပဲယူပြီးဆက်လုပ်တယ်)
+flex-1                 flex:1 1 0; (သူ့ထဲကစာတွေကျုံ့နိုင်သလောက်ထိလုပ်တယ်)
+flex-initial           flex:0 1 auto; (ဘာမှမပေးထားတာနဲ့တူနေ size ကိုအကျဉ်းအချုံ့လုပ်နေမယ်)
+ -->
+
+
+<!-- 
+(ကြီးတာ) // flex-auto နဲ့တူတယ်
+grow                    flex-grow: 1
+grow-0                  flex-grow: 0
+ -->
+
+<!-- 
+(ချုံ့တာ)
+shrink                  flex-shrink:1 
+shrink-0                flex-shrink:0
+ -->
